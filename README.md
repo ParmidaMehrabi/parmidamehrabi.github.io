@@ -1,1 +1,0 @@
-# parmidamehrabi.github.io
