@@ -14,7 +14,34 @@
 
     <h1>Hello, I'm Parmida Mehrabi</h1>
     <p>A programmer passionate about AI. Skilled in C++, Python, HTML, and Java.</p>
+    <ul>
+    <li onmouseover="showContent('About Me')" onmouseout="hideContent()">À propos</li>
+    <li onmouseover="showContent('My Goals')" onmouseout="hideContent()">Mes objectifs</li>
+    <li onmouseover="showContent('Contact')" onmouseout="hideContent()">Contact</li>
+   </ul>
 
+  <div id="content-area" class="hidden"></div>
+    <script>
+    function showContent(section) {
+     const contentArea = document.getElementById("content-area");
+     if (section === "About Me") {
+       contentArea.innerHTML = "<p>Je suis une développeuse passionnée par l'IA...</p>";
+     } else if (section === "My Goals") {
+       contentArea.innerHTML = "<p>Mes objectifs sont d'améliorer mes compétences en IA et en développement web.</p>";
+     } else if (section === "Contact") {
+       contentArea.innerHTML = "<p>Vous pouvez me contacter via mon email ou LinkedIn.</p>";
+     }
+     contentArea.classList.remove("hidden");
+     contentArea.classList.add("visible");
+   }
+
+   function hideContent() {
+    const contentArea = document.getElementById("content-area");
+    contentArea.classList.remove("visible");
+    contentArea.classList.add("hidden");
+   }
+   </script>
+    
    
 </body>
 
