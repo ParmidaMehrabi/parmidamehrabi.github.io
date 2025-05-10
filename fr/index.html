@@ -14,36 +14,35 @@
 
     <h1>Bonjour,</h1>
     <p> Je suis Parmida Mehrabi. J'ai 21 ans. <br> Développeuse passionnée par l’IA. Compétences : C++, Python, HTML, Java.</p>
-
     <ul>
-      <li onmouseover="showContent('apropos')" onmouseout="hideContent()">À propos</li>
-      <li onmouseover="showContent('objectifs')" onmouseout="hideContent()">Mes objectifs</li>
-      <li onmouseover="showContent('contact')" onmouseout="hideContent()">Contact</li>
-    </ul>
+    <li onmouseover="showContent('apropos')" onmouseout="hideContent()">À propos</li>
+    <li onmouseover="showContent('objectifs')" onmouseout="hideContent()">Mes objectifs</li>
+    <li onmouseover="showContent('contact')" onmouseout="hideContent()">Contact</li>
+   </ul>
 
-   <div id="content-area"></div>
-  <script>
-  function showContent(section) {
-    const contentArea = document.getElementById("content-area");
-    if (section === "apropos") {
-      contentArea.innerHTML = "<p>Je suis une développeuse passionnée par l'IA... </p>";
-        } else if (section === "objectifs") {
-      contentArea.innerHTML = "<p>Mes objectifs sont d'améliorer mes compétences en IA et en développement web.</p>";
-        } else if (section === "contact") {
-      contentArea.innerHTML = "<p>Vous pouvez me contacter via mon email ou LinkedIn.</p>";
-        }
+  <div id="content-area" class="hidden"></div>
+    <script>
+    function showContent(section) {
+     const contentArea = document.getElementById("content-area");
+     if (section === "apropos") {
+       contentArea.innerHTML = "<p>Je suis une développeuse passionnée par l'IA...</p>";
+     } else if (section === "objectifs") {
+       contentArea.innerHTML = "<p>Mes objectifs sont d'améliorer mes compétences en IA et en développement web.</p>";
+     } else if (section === "contact") {
+       contentArea.innerHTML = "<p>Vous pouvez me contacter via mon email ou LinkedIn.</p>";
      }
+     contentArea.classList.remove("hidden");
+     contentArea.classList.add("visible");
+   }
 
-  function hideContent() {
-    document.getElementById("content-area").innerHTML = "";
-  }
- </script>
-    #content-area {
-     margin-top: 40px;
-     padding: 20px;
-     background-color: #f1f1f1;
-     border: 4px solid #ccc;
-    }
+   function hideContent() {
+    const contentArea = document.getElementById("content-area");
+    contentArea.classList.remove("visible");
+    contentArea.classList.add("hidden");
+   }
+</script>
+    
+    
 </body>
    
 </html>
