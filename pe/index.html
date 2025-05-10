@@ -16,9 +16,32 @@
     <p>برنامه‌نویسی عاشق هوش مصنوعی. مسلط به C++، پایتون، HTML و جاوا.</p>
 
     <ul>
-        <li><a href="#">درباره من</a></li>
-        <li><a href="#">اهداف من</a></li>
-        <li><a href="#">تماس با من</a></li>
-    </ul>
+    <li onmouseover="showContent('درباره من')" onmouseout="hideContent()">À propos</li>
+    <li onmouseover="showContent('اهداف من')" onmouseout="hideContent()">Mes objectifs</li>
+    <li onmouseover="showContent('تماس با من')" onmouseout="hideContent()">Contact</li>
+   </ul>
+
+  <div id="content-area" class="hidden"></div>
+    <script>
+    function showContent(section) {
+     const contentArea = document.getElementById("content-area");
+     if (section === "درباره من") {
+       contentArea.innerHTML = "<p>Je suis une développeuse passionnée par l'IA...</p>";
+     } else if (section === "اهداف من") {
+       contentArea.innerHTML = "<p>Mes objectifs sont d'améliorer mes compétences en IA et en développement web.</p>";
+     } else if (section === "تماس با من") {
+       contentArea.innerHTML = "<p>Vous pouvez me contacter via mon email ou LinkedIn.</p>";
+     }
+     contentArea.classList.remove("hidden");
+     contentArea.classList.add("visible");
+   }
+
+   function hideContent() {
+    const contentArea = document.getElementById("content-area");
+    contentArea.classList.remove("visible");
+    contentArea.classList.add("hidden");
+   }
+   </script>
+    
 </body>
 </html>
