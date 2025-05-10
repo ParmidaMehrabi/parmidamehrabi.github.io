@@ -21,17 +21,24 @@
         <li><a href="#">Contact</a></li>
         
     </ul>
+    <ul>
+      <li onmouseover="showContent('apropos')" onmouseout="hideContent()">À propos</li>
+      <li onmouseover="showContent('objectifs')" onmouseout="hideContent()">Mes objectifs</li>
+      <li onmouseover="showContent('contact')" onmouseout="hideContent()">Contact</li>
+    </ul>
+
+   <div id="content-area"></div>
   <script>
   function showContent(section) {
     const contentArea = document.getElementById("content-area");
     if (section === "apropos") {
       contentArea.innerHTML = "<p>Je suis une développeuse passionnée par l'IA...</p>";
-    } else if (section === "objectifs") {
+        } else if (section === "objectifs") {
       contentArea.innerHTML = "<p>Mes objectifs sont d'améliorer mes compétences en IA et en développement web.</p>";
-    } else if (section === "contact") {
+        } else if (section === "contact") {
       contentArea.innerHTML = "<p>Vous pouvez me contacter via mon email ou LinkedIn.</p>";
-    }
-  }
+        }
+     }
 
   function hideContent() {
     document.getElementById("content-area").innerHTML = "";
