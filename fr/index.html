@@ -21,6 +21,22 @@
         <li><a href="#">Contact</a></li>
         
     </ul>
+  <script>
+  function showContent(section) {
+    const contentArea = document.getElementById("content-area");
+    if (section === "apropos") {
+      contentArea.innerHTML = "<p>Je suis une développeuse passionnée par l'IA...</p>";
+    } else if (section === "objectifs") {
+      contentArea.innerHTML = "<p>Mes objectifs sont d'améliorer mes compétences en IA et en développement web.</p>";
+    } else if (section === "contact") {
+      contentArea.innerHTML = "<p>Vous pouvez me contacter via mon email ou LinkedIn.</p>";
+    }
+  }
+
+  function hideContent() {
+    document.getElementById("content-area").innerHTML = "";
+  }
+ </script>
 </body>
    
 </html>
