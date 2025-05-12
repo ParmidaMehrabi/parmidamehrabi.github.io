@@ -1,52 +1,50 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <title>پارمیدا مهرابی</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <title>سایت من</title>
+  <style>
+    .content {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <a href="../index.html" >English</a> |
-        <a href="../fr/index.html">Français</a> |
-        <a href="index.html">Persian</a>
-        <html dir="ltr">
-    </nav>
 
-    <h1>سلام، من پارمیدا مهرابی هستم</h1>
-    <p>برنامه‌نویسی عاشق هوش مصنوعی. مسلط به C++، پایتون، HTML و جاوا.</p>
+  <ul>
+    <li><a href="#" onclick="showContent('about')">درباره من</a></li>
+    <li><a href="#" onclick="showContent('goals')">اهداف من</a></li>
+    <li><a href="#" onclick="showContent('contact')">وصل شدن به من</a></li>
+  </ul>
 
-    <ul>
-    <li onmouseover="showContent('درباره من')" onmouseout="hideContent()">درباره من</li>
-    <li onmouseover="showContent('اهداف من')" onmouseout="hideContent()">اهداف من</li>
-    <li onmouseover="showContent('تماس با من')" onmouseout="hideContent()">ارتباط با من</li>
-   </ul>
+  <div id="about" class="content">
+    <h2>درباره من</h2>
+    <p>من پارمیدا هستم، طراح آینده‌دار و عاشق تکنولوژی.</p>
+  </div>
 
-  <div id="content-area" class="hidden"></div>
-    <script>
-    function showContent(section) {
-     const contentArea = document.getElementById("content-area");
-     if (section === "درباره من") {
-       contentArea.innerHTML = "<p>من پارمیدا مهرابی هستم، یک توسعه‌دهنده ایرانی ۲۱ ساله که عمیقاً به تکنولوژی و نوآوری علاقه‌مندم. حدود دو سال پیش از ایران به فرانسه مهاجرت کردم تا رؤیای رشد در سطح بین‌المللی را دنبال کنم.
-         پیش از مهاجرتم، به مدت دو سال در ایران در رشته علوم کامپیوتر تحصیل کرده‌ام و این مسیر به من پایه‌ای محکم در مباحث تئوری و عملی برنامه‌نویسی داد. با این حال، ماجرای من با برنامه‌نویسی از پنج سال پیش شروع شده؛ با گذراندن دوره‌های تخصصی و انجام پروژه‌های شخصی. امروز مهارت‌هایی قوی در طراحی وب و برنامه‌نویسی با زبان‌های Python، C++ و Java دارم.
-         با ذهنی کنجکاو، دقیق و خلاق، تکنولوژی را فقط یک ابزار نمی‌دانم، بلکه آن را زبانی برای خلق، حل مسئله و ارتباط می‌بینم</p>";
-     } else if (section === "اهداف من") {
-       contentArea.innerHTML = "<p>هدف اصلی من ادامه تحصیل در فرانسه و تخصصی شدن در حوزه‌ای است که عمیقاً به آن علاقه دارم: هوش مصنوعی. باور دارم که اگر هوش مصنوعی به درستی استفاده شود، می‌تواند موتور قدرتمندی برای ایجاد تغییرات مثبت در جامعه ما باشد.
-         فراتر از یادگیری تئوری، می‌خواهم در پروژه‌های عملی واقعی شرکت کنم و تجربه‌ی عمیقی در این حوزه‌ی پویای در حال رشد به دست بیاورم.
-         در بلندمدت، قصد دارم مسیر شغلی محکمی بسازم، به موقعیت‌های بالاتر دست پیدا کنم و در نوآوری‌هایی که تأثیر واقعی دارند، سهم داشته باشم. رؤیای من فقط موفقیت شخصی نیست؛ بلکه الهام‌بخشی و کمک به ساختن جهانی هوشمندتر و عادلانه‌تر هم هست</p>";
-     } else if (section === "تماس با من") {
-       contentArea.innerHTML = "<p>Vous pouvez me contacter via mon email ou LinkedIn.</p>";
-     }
-     contentArea.classList.remove("hidden");
-     contentArea.classList.add("visible");
-   }
+  <div id="goals" class="content">
+    <h2>اهداف من</h2>
+    <p>یادگیری برنامه‌نویسی، ساخت اپلیکیشن هوش مصنوعی، و کمک به دیگران.</p>
+  </div>
 
-   function hideContent() {
-    const contentArea = document.getElementById("content-area");
-    contentArea.classList.remove("visible");
-    contentArea.classList.add("hidden");
-   }
-   </script>
-    
+  <div id="contact" class="content">
+    <h2>وصل شدن به من</h2>
+    <p>می‌تونی بهم از طریق اینستاگرام یا ایمیل پیام بدی.</p>
+  </div>
+
+  <script>
+    function showContent(id) {
+      // پنهان کردن همه بخش‌ها
+      const all = document.querySelectorAll('.content');
+      all.forEach(div => div.classList.remove('active'));
+
+      // نمایش فقط بخش انتخاب‌شده
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+
 </body>
 </html>
