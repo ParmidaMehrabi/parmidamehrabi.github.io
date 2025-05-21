@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <title>Parmida Mehrabi</title>
     <link rel="stylesheet" href="../style.css">
-</head>
-<body>
     <nav>
         <a href="../index.html">English</a> |
         <a href="index.html">Français</a> |
         <a href="../pe/index.html">Persian</a>
     </nav>
-
+      <style>
+    .content {
+      display: none;
+    }
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+ <body>
     <h1>Bonjour,</h1>
     <p> Je suis Parmida Mehrabi. <br> Développeuse passionnée par l’IA. Compétences : C++, Python, HTML, Java.</p>
     <ul>
-    <li onmouseover="showContent('Apropos')" onmouseout="hideContent()">À propos</li>
-    <li onmouseover="showContent('Objectifs')" onmouseout="hideContent()">Mes objectifs</li>
-    <li onmouseover="showContent('Contact')" onmouseout="hideContent()">Contact</li>
+    <li <a herf="#" onclick="showContent('about')">À propos</li>
+    <li <a herf="#" onclick="showContent('about')">Mes objectifs</li>
+    <li <a herf="#" onclick="showContent('about')">Contact</li>
    </ul>
 
   <div id="content-area" class="hidden"></div>
