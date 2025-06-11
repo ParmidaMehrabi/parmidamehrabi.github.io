@@ -1,33 +1,43 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr" >
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Parmida Mehrabi</title>
+    <title>Ma site</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        .content{
+            display: none;
+        }
+        .active{
+            display: block;
+        }
+    </style>
     <nav>
         <a href="../index.html">English</a> |
         <a href="index.html">Français</a> |
         <a href="../pe/index.html">Persian</a>
     </nav>
-      <style>
-    .content {
-      display: none;
-    }
-    .active {
-      display: block;
-    }
-  </style>
 </head>
  <body>
-    <h1>Bonjour,</h1>
+  <h1>Bonjour,</h1>
     <p> Je suis Parmida Mehrabi. <br> Développeuse passionnée par l’IA. Compétences : C++, Python, HTML, Java.</p>
     <ul>
     <li <a herf="#" onclick="showContent('about')">À propos</a></li>|
-    <li <a herf="#" onclick="showContent('about')">Mes objectifs</a></li>
-    <li <a herf="#" onclick="showContent('about')">Contact</a></li>
+    <li <a herf="#" onclick="showContent('goals')">Mes objectifs</a></li>
+    <li <a herf="#" onclick="showContent('contact')">Contact</a></li>
    </ul>
 
-  <div id="content-area" class="hidden"></div>
+  <div id="about" class="content">
+      <h2>A propose</h2>
+      <p>Je m'appelle Parmida , j'ai 21 ans </p>
+  </div>
+  <div id="goals" class="content">
+      <h2>اهداف من </h2>
+      <p>من میخوام </p>
+  </div>
+  <div id="contact" class="content">
+      <h2>ارتبات با من</h2>
+  </div>  
     <script>
     function showContent(section) {
      const contentArea = document.getElementById("content-area");
