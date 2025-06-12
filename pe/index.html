@@ -8,7 +8,7 @@
     .content {
       display: none;
     }
-    .active {
+    .content.active {
       display: block;
     }
   </style>
@@ -39,7 +39,6 @@
 
   <script>
     function showContent(id) {
-      // پنهان کردن همه بخش‌ها
       const all = document.querySelectorAll('.content');
       all.forEach(div => div.classList.remove('active'));
 
