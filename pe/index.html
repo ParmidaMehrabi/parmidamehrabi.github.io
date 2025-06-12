@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="fa" >
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <title>سایت من</title>
   <style>
-    <dir="rtl">
     .content {
       display: none;
     }
@@ -17,9 +16,9 @@
  <h1>درود من پارمیدا محرابی هستم</h1>
   <p>من برنامه نویس و محقق هستم</p>
   <ul>
-    <li><a harf="#" onclick="showContent('about')">درباره من</a></li>
-    <li><a harf="#" onclick="showContent('goals')">اهداف من</a></li>
-    <li><a harf="#" onclick="showContent('contact')">وصل شدن به من</a></li>
+    <li><a href="#" onclick="showContent('about')">درباره من</a></li>
+    <li><a href="#" onclick="showContent('goals')">اهداف من</a></li>
+    <li><a href="#" onclick="showContent('contact')">وصل شدن به من</a></li>
   </ul>
 
   <div id="about" class="content active">
@@ -42,7 +41,7 @@
       const contents = document.querySelectorAll('.content');
       contents.forEach(el => el.classList.remove('active'));
       document.getElementById(id).classList.add('active');
-      
+    }
   </script>
 
 </body>
