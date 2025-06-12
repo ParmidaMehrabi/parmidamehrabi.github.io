@@ -39,13 +39,10 @@
 
   <script>
     function showContent(id) {
-      const sections = document.querySelectorAll('.content');
-      sections.forEach(sections => {
-        section.classList.remove('active');
-      });
-      all.forEach(div => div.classList.remove('active'));
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(el => el.classList.remove('active'));
       document.getElementById(id).classList.add('active');
-    }
+      
   </script>
 
 </body>
