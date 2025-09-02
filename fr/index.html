@@ -40,9 +40,13 @@
       <p> vous pouvez me contact via mon email</p>
   </div>  
     <script>
-    function showContent(section) {
-        document.quarySeleltorAll('.content').forEach(div => div.classList.remove('active'));
-        document.getElementById(section).classList.add('active');
+    function showContent(id) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+       }
+  </script>
+
     </script>
 </body>
 </html>
