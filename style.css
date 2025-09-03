@@ -4,7 +4,15 @@ body {
   color: #333;
   font-size:28px;
 }
-
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+  body {
+    font-size: 14px;
+  }
+}
 h1 {
   color:#b78727  ;
   font-size: 64px;
