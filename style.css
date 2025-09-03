@@ -1,7 +1,7 @@
 body {
-  background-color: #8fbc8f  ;
+  background-color: #F5F5F5;
   font-family: "Tahoma", sans-serif;
-  color: #333;
+  color: #333 ;
   font-size:28px;
 }
 @media (max-width: 600px) {
@@ -9,16 +9,16 @@ body {
     display: block;
   }
   body {
-    font-size: 14px;
+    font-size: 5px;
   }
 }
 h1 {
-  color:#b78727  ;
+  color:#000000  ;
   font-size: 64px;
 }
 
 a {
-  color: #000000;
+  color: #FF6B9C;
   text-decoration: none;
 }
 content-area {
