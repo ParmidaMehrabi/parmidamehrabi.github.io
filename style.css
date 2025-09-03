@@ -21,7 +21,7 @@ a {
   color: #FF6B9C;
   text-decoration: none;
 }
-.button {
+.a {
   position: relative;
   display: inline-block;
   padding: 12px 30px;
@@ -37,7 +37,7 @@ a {
 }
 
 /* حلقه دایره‌ای */
-.button::before {
+.a::before {
   content: ‘’;
   position: absolute;
   top: -5px;
@@ -51,12 +51,12 @@ a {
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
-.button:hover::before {
+.a:hover::before {
   opacity: 1;
   transform: scale(1.1);
 }
 
-.button:hover {
+.a:hover {
   color: #FFD700;
 }
 content-area {
