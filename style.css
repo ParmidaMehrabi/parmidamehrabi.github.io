@@ -1,5 +1,5 @@
 body {
-  background-color: #F5F5F5;
+  background-color: #FF6B9C;
   font-family: "Tahoma", sans-serif;
   color: #333 ;
   font-size:28px;
@@ -13,12 +13,12 @@ body {
   }
 }
 h1 {
-  color:#000000  ;
+  color:#5BC0EB  ;
   font-size: 64px;
 }
 
 a {
-  color: #FF6B9C;
+  color: #F5F5F5;
   text-decoration: none;
 }
 content-area {
