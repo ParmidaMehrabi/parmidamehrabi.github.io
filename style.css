@@ -21,6 +21,44 @@ a {
   color: #5BC0EB;
   text-decoration: none;
 }
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 12px 30px;
+  color: #5BC0EB; /* رنگ متن */
+  background-color: #B0B0B0; /* خاکستری متوسط */
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: visible;
+  z-index: 0;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+/* حلقه دایره‌ای */
+.button::before {
+  content: ‘’;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border: 2px solid #FFD700; /* طلایی */
+  border-radius: 12px;
+  opacity: 0;
+  transform: scale(0.5);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.button:hover::before {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.button:hover {
+  color: #FFD700;
+}
 content-area {
   margin-top: 20px;
   padding: 10px;
