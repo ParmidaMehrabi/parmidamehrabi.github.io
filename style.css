@@ -7,7 +7,6 @@ body {
 @media (max-width: 600px) {
   nav a {
     display: block;
-    margin: 8px 0;
   }
   body {
     font-size: 14px;
