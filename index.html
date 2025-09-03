@@ -40,7 +40,11 @@
         <p>here we have some ways for contact with me</p>
     </div>
   <script>
-      
+      function showContent(id) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+       } 
   </script>
 </body>
 
