@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #FFD700;
+  color: red;
 }
 content-area {
   margin-top: 20px;
