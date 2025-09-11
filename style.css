@@ -1,7 +1,9 @@
 body {
   background-image: url("/Screenshot 2025-09-08 074924.png");
   background-repeat: no-repeat;
-  background-size: full-cover;
+  background-size: cover;
+  background-position: center center ;
+  background-attachment: fixed ;
   font-family: "Tahoma", sans-serif;
   color: white ;
   font-size:28px;
