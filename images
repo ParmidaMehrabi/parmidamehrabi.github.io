@@ -1,3 +1,0 @@
-git rm image
-git commit -m "Delete image file"
-git push origin main
