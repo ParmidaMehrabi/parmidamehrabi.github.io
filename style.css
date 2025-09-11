@@ -8,6 +8,13 @@ body {
   color: white ;
   font-size:28px;
 }
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-size: contain;  /* تصویر کامل دیده بشه بدون برش */
+        background-position: center top; /* وسط بالای صفحه */
+    }
+}
 @media (max-width: 600px) {
   nav a {
     display: block;
