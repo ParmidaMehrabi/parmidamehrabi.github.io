@@ -46,14 +46,11 @@
   </div>
 
    <script>
-     function toggleContent(id) {
-     const el = document.getElementById(id);
-     const isActive = el.classList.contains(‘active’);
-     document.querySelectorAll(‘.content’).forEach(item => item.classList.remove(‘active’));
-        if (!isActive) {
-       el.classList.add(‘active’);
-        }
-     }
+         function showContent(id) {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(el => el.classList.remove('.content.active'));
+      document.getElementById(id).classList.add('.content.active');
+       }
   </script>
 
 </body>
