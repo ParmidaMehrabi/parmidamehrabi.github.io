@@ -34,20 +34,3 @@ a {
 a:hover {
   color: red;
 }
-content-area {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #f1f1f1;
-  border: 1px solid #ccc;
-  opacity: 0;
-  transition: opacity 0.5s ease;
-  height: auto;
-}
-content-area.visible {
-  opacity: 1;
-}
-
-content-area.hidden {
-  opacity: 0;
-}
-
