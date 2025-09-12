@@ -44,12 +44,15 @@
         <p>here we have some ways for contact with me</p>
     </div>
   <script>
-      function showContent(id) {
-      const contents = document.querySelectorAll('.content');
-      contents.forEach(el => el.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-       } 
-  </script>
+   function toggleContent(id) {
+   const el = document.getElementById(id);
+   const isActive = el.classList.contains(‘active’);
+   document.querySelectorAll(‘.content’).forEach(item => item.classList.remove(‘active’));
+    if (!isActive) {
+    el.classList.add(‘active’);
+        }
+     }
+</script>
 </body>
 
 </html>
