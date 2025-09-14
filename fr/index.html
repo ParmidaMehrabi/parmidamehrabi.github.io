@@ -47,6 +47,10 @@
       const contents = document.querySelectorAll('.content');
       contents.forEach(el => el.classList.remove('active'));
       document.getElementById(id).classList.add('active');
+      contents.forEach(el => el.classList.remove(‘active’)); 
+      if (!isActive) {
+         target.classList.add(‘active’);
+          }
        }
   </script>
 </body>
