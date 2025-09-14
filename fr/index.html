@@ -43,15 +43,17 @@
       <p> vous pouvez me contact via mon email</p>
   </div>  
     <script>
-    function showContent(id) {
-      const contents = document.querySelectorAll('.content');
-      contents.forEach(el => el.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-      contents.forEach(el => el.classList.remove(‘active’)); 
+      function showContent(id) {
+        const contents = document.querySelectorAll(‘.content’);   .content 
+               const target = document.getElementById(id);
+       if (!target) return;
+        const isActive = target.classList.contains(‘active’);
+
+            contents.forEach(el => el.classList.remove(‘active’));
       if (!isActive) {
-         target.classList.add(‘active’);
-          }
+          target.classList.add(‘active’);
        }
-  </script>
+    }
+</script>
 </body>
 </html>
