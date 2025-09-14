@@ -10,7 +10,7 @@ body {
 
 @media screen and (min-width: 1024px) {
     body {
-        background-size: full cover;
+        background-size: fullcover;
         background-position: center top; 
     }
 }
