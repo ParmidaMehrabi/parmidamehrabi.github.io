@@ -39,10 +39,19 @@
     <h2>اهداف من</h2>
     <p>یادگیری برنامه‌نویسی، ساخت اپلیکیشن هوش مصنوعی، و کمک به دیگران.</p>
   </div>
-
   <div id="contact" class="content">
-    <h2>وصل شدن به من</h2>
-    <p>می‌تونی بهم از طریق اینستاگرام یا ایمیل پیام بدی.</p>
+    <h2>Contact Me</h2>
+      <form action=“https://formspree.io/f/yourformid” method=“POST”>
+    <label for=“name”>نام:</label><br>
+    <input type=“text” id=“name” name=“name” placeholder=“نام شما” required><br><br>
+    <label for=“whatsapp”>شماره واتساپ:</label><br>
+    <input type=“text” id=“whatsapp” name=“whatsapp” placeholder=“مثلاً +33 6 12 34 56 78”><br><br>
+    <label for=“instagram”>آیدی اینستاگرام:</label><br>
+    <input type=“text” id=“instagram” name=“instagram” placeholder=“@username”><br><br>
+    <label for=“message”>با من چیکار داری؟</label><br>
+    <textarea id=“message” name=“message” rows=“5” placeholder=“پیام شما...” required></textarea><br><br>
+    <button type=“submit”>ارسال</button>
+     </form>
   </div>
 
    <script>
