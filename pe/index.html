@@ -51,7 +51,6 @@
     <label for=“message”>با من چیکار داری؟</label><br>
     <textarea id=“message” name=“message” rows=“5” placeholder=“پیام شما...” required></textarea><br><br>
     <button type=“submit”>ارسال</button>
-        <return>
      </form>
   </div>
 
@@ -61,6 +60,24 @@
       contents.forEach(el => el.classList.remove('active'));
       document.getElementById(id).classList.add('active');
        }
+     const form = document.getElementById(‘contactForm’);
+     const status = document.getElementById(‘status’);
+     form.addEventListener(‘submit’, function(event) {
+    event.preventDefault(); 
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: { ‘Accept’: ‘application/json’ }
+    }).then(response => {
+      if (response.ok) {
+        status.textContent = “✅ پیام شما ارسال شد!”;
+        form.reset(); // خالی کردن فرم
+      } else {
+        status.textContent = “❌ خطا در ارسال، دوباره امتحان کنید.”;
+      }
+    }).catch(() => {
+      status.textContent = “❌ مشکلی پیش آمد.”;
+    });
   </script>
 
 </body>
