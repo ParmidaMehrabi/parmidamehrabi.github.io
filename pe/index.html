@@ -55,6 +55,13 @@
     <button type=“submit”>ارسال</button>
      </form>
   </div>
+  <script>
+      document.querySelector(« form »).addEventListener(« submit », function(event) {
+      event.preventDefault(); // نذاره صفحه عوض شه
+      this.reset(); // فرم رو پاک کنه
+      window.scrollTo(0, 0); // صفحه برگرده بالا
+           });
+  </script>
 
    <script>
          function showContent(id) {
