@@ -41,7 +41,7 @@
   </div>
   <div id="contact" class="content">
     <h2>ارتباط با من </h2>
-      <form action=“https://formspree.io/f/mpwowpqy” method=“POST”>
+      <form id="contactForm" action=“https://formspree.io/f/mpwowpqy” method=“POST” onsubmit="return valideteForm(event)">
     <label for=“name”>نام:</label><br>
     <input type=“text” id=“name” name=“name” placeholder=“نام شما” required><br><br>
     <label for=“whatsapp”>شماره واتساپ:</label><br>
