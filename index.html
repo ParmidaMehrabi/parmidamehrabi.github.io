@@ -1,231 +1,246 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" >
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=divce-width, initial-scale=1.0">
-    <meta name=“description” content=“personnel portfolio of Parmida Mehrabi, a programmer passionate about AI, C++, Python, HTML, Java.”>
-    <title>Parmida Mehrabi </title>
-    <link rel="stylesheet" href="../style.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-        body{
-            font-familly: Arial, sens-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #f0f0f0;
-        }
-        header{
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        header img{
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-            color: white;
-        }
-        .language-switch {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: rgba(0,0,0,0.5);
-            padding: 10px;
-            border-radius: 5px;
-        }
-        .language-switch a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-        nav {
-            background-color: rgba((0 , 0 , 0 , 0.7);
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #00ff00;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: rgba(255 , 255 , 255 , 0.9);
-            border-radius: 8px;
-            color: #333 ;
-            box-shadow: 0 0 15px rgba(0,255,255,0.5);
-        }
-        #skills ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        #skills li {
-            background: #e9ecef;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
-        }
-        #projects ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        #projects li {
-            margin-bottom: 20px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        input, textarea, button {
-            margin: 10px 0;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background-color: #007bff;
-            color: white;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-            margin-top: 20px;
-        }
-        @media (max-width: 600px) {
-            section {
-                margin: 10px;
-                padding: 15px;
-            }
-            header {
-                padding: 20px 10px;
-            }
-        }
-        #content{
-         max-width: 800px;
-         margin: 0 auto;
-         background: white;
-         padding: 30px;
-         border-radius: 10px;
-         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-         display: none; /* در ابتدا مخفی باشه */
-      }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Parmida Mehrabi - Programmer passionate about Artificial Intelligence">
+  <title>Parmida Mehrabi - Portfolio</title>
+  <style>
+    :root {
+      --primary: #007bff;
+      --primary-dark: #0056b3;
+      --bg: #f8f9fa;
+      --text: #333;
+      --card-bg: white;
+    }
+    body {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      margin: 0;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    html { scroll-behavior: smooth; }
+
+    header {
+      background: linear-gradient(to bottom, var(--primary), var(--primary-dark));
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+    .language-switch {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(0,0,0,0.3);
+      padding: 8px 15px;
+      border-radius: 30px;
+    }
+    .language-switch a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav {
+      background: rgba(0,0,0,0.8);
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #a0d8ff; }
+
+    .accordion {
+      max-width: 900px;
+      margin: 30px auto;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .section-button {
+      width: 100%;
+      padding: 20px;
+      background: var(--primary);
+      color: white;
+      font-size: 20px;
+      text-align: left;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .section-button:hover { background: var(--primary-dark); }
+    .section-content {
+      max-height: 0;
+      overflow: hidden;
+      background: var(--card-bg);
+      padding: 0 30px;
+      transition: max-height 0.5s ease, padding 0.5s ease;
+    }
+    .section-content.open {
+      max-height: 1200px;
+      padding: 30px;
+    }
+    .section-content ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+    .section-content li {
+      margin: 15px 0;
+      padding: 15px;
+      background: #f1f3f5;
+      border-radius: 8px;
+    }
+    .section-content a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .section-content a:hover { text-decoration: underline; }
+
+    form {
+      display: grid;
+      gap: 15px;
+    }
+    input, textarea, button {
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover { background: var(--primary-dark); }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 40px 15px; }
+      .language-switch { position: static; margin-bottom: 20px; }
+      nav a { margin: 0 8px; font-size: 14px; }
+      .section-content { padding: 20px; }
+    }
+  </style>
 </head>
 <body>
-      .content{
-            display: none;
-        }
-     .content.active{
-            display: block;
-        }
-    <div style="position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px;">
-       <a href="/en/" style="color: white; margin: 0 10px; text-decoration: none;">English</a>
-       <a href="/fr/" style="color: white; margin: 0 10px; text-decoration: none;">Français</a>
-       <a href="/pe/" style="color: white; margin: 0 10px; text-decoration: none;">Persian</a>
-    </div>
-    <header>
-        <img src="images/profile.jpg" alt="Profile photo of Parmida Mehrabi">
-        <h1>Parmida Mehrabi</h1>
-        <p>A programmer passionate about AI. Skilled in C++, Python, HTML, and Java.</p>
-    </header>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#goals">My Goals</a>
-        <a href="#contact">Contact Me</a>
-    </nav>
-     <div class="section">
-         <button class="section-button">About Me</button>
-       <div class="section-content">  
-        <p>My name is Parmida Mehrabi. I am a computer science student with a strong interest in artificial intelligence. I have experience in developing AI projects and web applications. Currently, I am completing the CS50 course from Harvard to enhance my skills.</p>
-       </div>
-     </div>
-    <div class="section">
-         <button class="section-button">Skills</button>
-       <div class="section-content">  
-        <ul>
-            <li>C++ - Advanced programming for algorithms and systems.</li>
-            <li>Python - Used for AI, machine learning, and scripting.</li>
-            <li>HTML/CSS - Building responsive websites.</li>
-            <li>Java - Object-oriented programming and app development.</li>
-        </ul>
-       </div>
+  <header>
+    <div class="language-switch">
+      <a href="/en/">English</a> |
+      <a href="/fr/">Français</a> |
+      <a href="/pe/">Persian</a>
+    </div>
+    <img src="images/profile.jpg" alt="Profile photo of Parmida Mehrabi">
+    <h1>Parmida Mehrabi</h1>
+    <p>Programmer passionate about Artificial Intelligence | Skilled in C++, Python, HTML/CSS, and Java</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#goals">My Goals</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+
+  <div class="accordion">
+    <!-- About Me -->
+    <button class="section-button">About Me</button>
+    <div class="section-content">
+      <p>Hello! I'm Parmida Mehrabi, a computer science student with a strong passion for artificial intelligence. I have experience in developing AI projects and web applications. Currently, I'm completing the CS50 course from Harvard University to further enhance my skills.</p>
     </div>
 
-  <div class="section">
-         <button class="section-button">MY projects</button>
-       <div class="section-content">  
-        <ul>
-            <li>
-                <h3>AI Chatbot</h3>
-                <p>A simple chatbot built with Python and NLTK library for natural language processing.</p>
-                <a href="https://github.com/parmidamehrabi/ai-chatbot">View on GitHub</a>
-            </li>
-            <li>
-                <h3>Personal Website</h3>
-                <p>This portfolio site, built with HTML, CSS, and JavaScript on GitHub Pages.</p>
-                <a href="https://github.com/parmidamehrabi/parmidamehrabi.github.io">View Source</a>
-            </li>
-        </ul>
-        </div>
+    <!-- Skills -->
+    <button class="section-button">Skills</button>
+    <div class="section-content">
+      <ul>
+        <li><strong>C++</strong> - Advanced programming for algorithms and systems</li>
+        <li><strong>Python</strong> - Used for AI, machine learning, and scripting</li>
+        <li><strong>HTML/CSS</strong> - Building responsive websites</li>
+        <li><strong>Java</strong> - Object-oriented programming and app development</li>
+      </ul>
     </div>
 
-    <div class="section">
-         <button class="section-button">My</button>
-       <div class="section-content">  
-        <p>I would like to tell you about my goals. Short-term: Complete CS50 and build more AI projects. Long-term: Work in AI research at a tech company and contribute to open-source communities.</p>
-        </div>
+    <!-- Projects -->
+    <button class="section-button">Projects</button>
+    <div class="section-content">
+      <ul>
+        <li>
+          <h3>AI Chatbot</h3>
+          <p>A simple chatbot built with Python and the NLTK library for natural language processing.</p>
+          <a href="https://github.com/parmidamehrabi/ai-chatbot" target="_blank">View on GitHub</a>
+        </li>
+        <li>
+          <h3>Personal Website</h3>
+          <p>This portfolio site, built with HTML, CSS, and JavaScript on GitHub Pages.</p>
+          <a href="https://github.com/ParmidaMehrabi/parmidamehrabi.github.io" target="_blank">View Source</a>
+        </li>
+      </ul>
     </div>
 
-   <div class="section">
-         <button class="section-button">Contact Me</button>
-       <div class="section-content">  
-        <p>Here are some ways to contact me:</p>
-        <form action="https://formspree.io/f/your-form-id" method="POST" id="contact-form">
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-        <p>Email: parmida.mehrabi@example.com | LinkedIn: <a href="https://linkedin.com/in/parmidamehrabi">My Profile</a></p>
-        </div>
-   </div>
+    <!-- Goals -->
+    <button class="section-button">My Goals</button>
+    <div class="section-content">
+      <p>Short-term: Complete CS50 and build more AI projects.<br>
+      Long-term: Work in AI research at a tech company and contribute to open-source communities.</p>
+    </div>
 
-    <footer>
-        &copy; 2025 Parmida Mehrabi | Built with HTML, CSS, and JS for CS50 Final Project
-    </footer>
+    <!-- Contact -->
+    <button class="section-button">Contact Me</button>
+    <div class="section-content">
+      <p>Ways to reach me:</p>
+      <form action="https://formspree.io/f/YOUR-FORM-ID-HERE" method="POST">
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p style="margin-top: 20px;">
+        Email: parmida.mehrabi@example.com<br>
+        LinkedIn: <a href="https://linkedin.com/in/parmidamehrabi" target="_blank">My Profile</a>
+      </p>
+    </div>
+  </div>
 
-    <script>
-        const buttons = document.querySelectorAll('.section-button');
+  <footer>
+    © 2025 Parmida Mehrabi | Built with HTML, CSS, and JavaScript – CS50 Final Project
+  </footer>
 
-    buttons.forEach(button => {
-      button.addEventListener('click', () => {
-        // بخش محتوایی بعدی رو پیدا کن
-        const content = button.nextElementSibling;
-
-        // کلاس open رو toggle کن (اضافه یا حذف)
+  <script>
+    const buttons = document.querySelectorAll('.section-button');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
         content.classList.toggle('open');
       });
     });
   </script>
+
 </body>
-</html>
+</html
