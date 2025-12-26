@@ -136,14 +136,54 @@
         </ul>
     </section>
 
-    <section id="projects">
+   <section id="projects">
         <h2>Projects</h2>
         <ul>
             <li>
                 <h3>AI Chatbot</h3>
                 <p>A simple chatbot built with Python and NLTK library for natural language processing.</p>
-                <a href="https://github
-        }
+                <a href="https://github.com/parmidamehrabi/ai-chatbot">View on GitHub</a>
+            </li>
+            <li>
+                <h3>Personal Website</h3>
+                <p>This portfolio site, built with HTML, CSS, and JavaScript on GitHub Pages.</p>
+                <a href="https://github.com/parmidamehrabi/parmidamehrabi.github.io">View Source</a>
+            </li>
+        </ul>
+    </section>
 
+    <section id="goals">
+        <h2>My Goals</h2>
+        <p>I would like to tell you about my goals. Short-term: Complete CS50 and build more AI projects. Long-term: Work in AI research at a tech company and contribute to open-source communities.</p>
+    </section>
 
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Here are some ways to contact me:</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST" id="contact-form">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>Email: parmida.mehrabi@example.com | LinkedIn: <a href="https://linkedin.com/in/parmidamehrabi">My Profile</a></p>
+    </section>
+
+    <footer>
+        &copy; 2025 Parmida Mehrabi | Built with HTML, CSS, and JS for CS50 Final Project
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            const email = document.querySelector('input[name="email"]').value;
+            const message = document.querySelector('textarea[name="message"]').value;
+            if (!email || !message) {
+                alert('Please fill in all fields!');
+                event.preventDefault();
+            } else {
+                alert('Message sent successfully!');
+            }
+        });
+    </script>
+
+</body>
 </html>
