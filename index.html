@@ -117,16 +117,25 @@
                 padding: 20px 10px;
             }
         }
+        #content{
+         max-width: 800px;
+         margin: 0 auto;
+         background: white;
+         padding: 30px;
+         border-radius: 10px;
+         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+         display: none; /* در ابتدا مخفی باشه */
+      }
+        }
+    </style>
+</head>
+<body>
       .content{
             display: none;
         }
      .content.active{
             display: block;
         }
-
-    </style>
-</head>
-<body>
     <div style="position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.5); padding: 10px; border-radius: 5px;">
        <a href="/en/" style="color: white; margin: 0 10px; text-decoration: none;">English</a>
        <a href="/fr/" style="color: white; margin: 0 10px; text-decoration: none;">Français</a>
@@ -145,24 +154,27 @@
         <a href="#goals">My Goals</a>
         <a href="#contact">Contact Me</a>
     </nav>
-
-    <section id="about" class="content">
-        <h2>About Me</h2>
+     <div class="section">
+         <button class="section-button">About Me</button>
+       <div class="section-content">  
         <p>My name is Parmida Mehrabi. I am a computer science student with a strong interest in artificial intelligence. I have experience in developing AI projects and web applications. Currently, I am completing the CS50 course from Harvard to enhance my skills.</p>
-    </section>
-
-    <section id="skills" class="content">
-        <h2>Skills</h2>
+       </div>
+     </div>
+    <div class="section">
+         <button class="section-button">Skills</button>
+       <div class="section-content">  
         <ul>
             <li>C++ - Advanced programming for algorithms and systems.</li>
             <li>Python - Used for AI, machine learning, and scripting.</li>
             <li>HTML/CSS - Building responsive websites.</li>
             <li>Java - Object-oriented programming and app development.</li>
         </ul>
-    </section>
+       </div>
+    </div>
 
-   <section id="projects" class="content">
-        <h2>Projects</h2>
+  <div class="section">
+         <button class="section-button">MY projects</button>
+       <div class="section-content">  
         <ul>
             <li>
                 <h3>AI Chatbot</h3>
@@ -175,15 +187,19 @@
                 <a href="https://github.com/parmidamehrabi/parmidamehrabi.github.io">View Source</a>
             </li>
         </ul>
-    </section>
+        </div>
+    </div>
 
-    <section id="goals" class="content">
-        <h2>My Goals</h2>
+    <div class="section">
+         <button class="section-button">My</button>
+       <div class="section-content">  
         <p>I would like to tell you about my goals. Short-term: Complete CS50 and build more AI projects. Long-term: Work in AI research at a tech company and contribute to open-source communities.</p>
-    </section>
+        </div>
+    </div>
 
-    <section id="contact" class="content">
-        <h2>Contact Me</h2>
+   <div class="section">
+         <button class="section-button">Contact Me</button>
+       <div class="section-content">  
         <p>Here are some ways to contact me:</p>
         <form action="https://formspree.io/f/your-form-id" method="POST" id="contact-form">
             <input type="email" name="email" placeholder="Your Email" required>
@@ -191,24 +207,25 @@
             <button type="submit">Send Message</button>
         </form>
         <p>Email: parmida.mehrabi@example.com | LinkedIn: <a href="https://linkedin.com/in/parmidamehrabi">My Profile</a></p>
-    </section>
+        </div>
+   </div>
 
     <footer>
         &copy; 2025 Parmida Mehrabi | Built with HTML, CSS, and JS for CS50 Final Project
     </footer>
 
     <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            const email = document.querySelector('input[name="email"]').value;
-            const message = document.querySelector('textarea[name="message"]').value;
-            if (!email || !message) {
-                alert('Please fill in all fields!');
-                event.preventDefault();
-            } else {
-                alert('Message sent successfully!');
-            }
-        });
-    </script>
+        const buttons = document.querySelectorAll('.section-button');
 
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        // بخش محتوایی بعدی رو پیدا کن
+        const content = button.nextElementSibling;
+
+        // کلاس open رو toggle کن (اضافه یا حذف)
+        content.classList.toggle('open');
+      });
+    });
+  </script>
 </body>
 </html>
