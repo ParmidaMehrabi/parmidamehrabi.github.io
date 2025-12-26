@@ -2,55 +2,138 @@
 <html lang="en" dir="ltr" >
 <head>
     <meta charset="UTF-8">
-    <title>Parmida Mehrabi</title>
-    <meta name=“description” content=“Site personnel de Parmida Mehrabi, développeuse passionnée par l’intelligence artificielle, C++, Python, HTML, Java.”>
-    <meta name=“keywords” content=“Parmida Mehrabi, développeuse, intelligence artificielle, C++, Python, HTML, Java”>
-    <meta name=“author” content=“Parmida Mehrabi”>
-
+    <meta name="viewport" content="width=divce-width, initial-scale=1.0">
+    <meta name=“description” content=“personnel portfolio of Parmida Mehrabi, a programmer passionate about AI, C++, Python, HTML, Java.”>
+    <title>Parmida Mehrabi </title>
     <link rel="stylesheet" href="../style.css">
     <style>
-        .content{
-            display:none;
+        body{
+            font-familly: Arial, sens-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
-        .content.active{
-            display:block;
+        header img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #skills li {
+            background: #e9ecef;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        #projects ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #projects li {
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea, button {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        /* Responsive design */
+        @media (max-width: 600px) {
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+            header {
+                padding: 20px 10px;
+            }
         }
     </style>
 </head>
 <body>
+    <header>
+        <img src="images/profile.jpg" alt="Profile photo of Parmida Mehrabi">
+        <h1>Parmida Mehrabi</h1>
+        <p>A programmer passionate about AI. Skilled in C++, Python, HTML, and Java.</p>
+    </header>
+
     <nav>
-        <a href="index.html">English</a> |
-        <a href="../fr/index.html">Français</a> |
-        <a href="../pe/index.html">Persian</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#goals">My Goals</a>
+        <a href="#contact">Contact Me</a>
     </nav>
 
-    <h1>Hello, </h1>
-    <p>I'm Parmida Mehrabi.<br> A programmer passionate about AI. Skilled in C++, Python, HTML, and Java.</p>
-    <ul>
-        <li><a href="#" onclick="showContent('about')">About Me</a></li>
-        <li><a href="#" onclick="showContent('goals')">My Goals</a></li>
-        <li><a href="#" onclick="showContent('contact')">Contact Me</a></li>
-   </ul>
-    <div id="about" class="content">
+    <section id="about">
         <h2>About Me</h2>
-        <p>My name is parmida</p>
-    </div>
-    <div id="goals" class="content">
-        <h2>My Goals</h2>
-        <p>Now I would like say for you what is my goals</p>
-    </div>
-    <div id="contact" class="content">
-        <h2>Contact me</h2>
-        <p>here we have some ways for contact with me</p>
-    </div>
-   <script>
-         function showContent(id) {
-      const contents = document.querySelectorAll('.content');
-      contents.forEach(el => el.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-       }
-   </script>
+        <p>My name is Parmida Mehrabi. I am a computer science student with a strong interest in artificial intelligence. I have experience in developing AI projects and web applications. Currently, I am completing the CS50 course from Harvard to enhance my skills.</p>
+    </section>
 
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>C++ - Advanced programming for algorithms and systems.</li>
+            <li>Python - Used for AI, machine learning, and scripting.</li>
+            <li>HTML/CSS - Building responsive websites.</li>
+            <li>Java - Object-oriented programming and app development.</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>AI Chatbot</h3>
+                <p>A simple chatbot built with Python and NLTK library for natural language processing.</p>
+                <a href="https://github
+        }
 
 
 </html>
