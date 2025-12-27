@@ -168,6 +168,21 @@
         </form>
         <p>Email: parmida.mehrabi@example.com<br>LinkedIn: <a href="https://linkedin.com/in/parmidamehrabi">Mon profil</a></p>
     </section>
+    <script>
+      function toggleSection(sectionId) {
+        var content = document.getElementById(sectionId);
+        var arrowId = sectionId.replace('Content', 'Arrow');
+        var arrow = document.getElementById(arrowId);
+        
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        arrow.textContent = "▲";  
+        } else {
+            content.style.display = "none";
+            arrow.textContent = "▼";  
+        }
+    }
+   </script>
     <button onclick="toggleTheme()" style="position:fixed; top:10px; left:10px; padding:10px; background:#007bff; color:white; border:none; cursor:pointer;">Toggle Theme</button>
     
     <footer>&copy; 2025 Parmida Mehrabi | Construit pour le projet final CS50</footer>
