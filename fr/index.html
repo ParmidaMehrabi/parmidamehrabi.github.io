@@ -2,53 +2,81 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Mon site</title>
-    <meta name=“description” content=“Site personnel de Parmida Mehrabi, développeuse passionnée par l’intelligence artificielle, C++, Python, HTML, Java.”>
-    <meta name=“keywords” content=“Parmida Mehrabi, développeuse, intelligence artificielle, C++, Python, HTML, Java”>
-    <meta name=“author” content=“Parmida Mehrabi”>
-    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio personnel de Parmida Mehrabi, programmeuse passionnée par l'intelligence artificielle.">
+    <title>Parmida Mehrabi - Portfolio</title>
     <style>
-        .content{
-            display: none;
-        }
-        .content.active{
-            display: block;
-        }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: Arial, sans-serif;
+              margin: 0;
+              padding: 0;
+              background-color: #f4f4f4;
+              color: #333;
+              line-height: 1.6;
+             }
+        
     </style>
 </head>
- <body>
+<body>
+    <div style="text-align: right; padding: 10px;">
+        <a href="/en/">English</a> |
+        <a href="/fr/">Français</a> |
+        <a href="/fa/">Persian</a>
+    </div>
+    <header>
+        <img src="../images/profile.jpg" alt="Photo de profil de Parmida Mehrabi">
+        <h1>Parmida Mehrabi</h1>
+        <p>Programmeuse passionnée par l'intelligence artificielle | Compétente en C++, Python, HTML/CSS et Java</p>
+    </header>
     <nav>
-        <a href="../index.html">English</a> |
-        <a href="fr/index.html">Français</a> |
-        <a href="../pe/index.html">Persian</a>
+        <a href="#about">À propos de moi</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#goals">Mes objectifs</a>
+        <a href="#contact">Contactez-moi</a>
     </nav>
-    <h1>Bonjour,</h1>
-    <p> Je suis Parmida Mehrabi. <br> Développeuse passionnée par l’IA. Compétences : C++, Python, HTML, Java.</p>
- <ul>
-    <li><a href="javascript:void(0)" onclick="showContent('about'); return false;">À propos</a></li>
-    <li><a href="javascript:void(0)" onclick="showContent('goals');return false;">Mes objectifs</a></li>
-    <li><a href="javascript:void(0)" onclick="showContent('contact');return false;">Contact</a></li>
-   </ul>
-
-  <div id="about" class="content">
-      <h2>A propos</h2>
-      <p>Je m'appelle Parmida , j'ai 21 ans </p>
-  </div>
-  <div id="goals" class="content">
-      <h2> Mes objectifs</h2>
-      <p> Je veux ...</p>
-  </div>
-  <div id="contact" class="content">
-      <h2> Contact </h2>
-      <p> vous pouvez me contact via mon email</p>
-  </div>  
- <script>
-         function showContent(id) {
-      const contents = document.querySelectorAll('.content');
-      contents.forEach(el => el.classList.remove('active'));
-      document.getElementById(id).classList.add('active');
-       }
-   </script>
-
-
+    <section id="about">
+        <h2>À propos de moi</h2>
+        <p>Bonjour ! Je m'appelle Parmida Mehrabi, étudiante en informatique avec une forte passion pour l'intelligence artificielle. J'ai de l'expérience dans le développement de projets IA et d'applications web. Actuellement, je termine le cours CS50 de l'Université Harvard pour améliorer mes compétences.</p>
+    </section>
+    <section id="skills">
+        <h2>Compétences</h2>
+        <ul>
+            <li><strong>C++</strong> - Programmation avancée pour algorithmes et systèmes</li>
+            <li><strong>Python</strong> - Utilisé pour l'IA, l'apprentissage automatique et le scripting</li>
+            <li><strong>HTML/CSS</strong> - Construction de sites web responsifs</li>
+            <li><strong>Java</strong> - Programmation orientée objet et développement d'apps</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projets</h2>
+        <div class="project">
+            <h3>Chatbot IA</h3>
+            <p>Un chatbot simple construit avec Python et la bibliothèque NLTK pour le traitement du langage naturel.</p>
+            <a href="https://github.com/parmidamehrabi/ai-chatbot">Voir sur GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Site web personnel</h3>
+            <p>Ce portfolio, construit avec HTML, CSS et JavaScript sur GitHub Pages.</p>
+            <a href="https://github.com/parmidamehrabi/parmidamehrabi.github.io">Voir la source</a>
+        </div>
+    </section>
+    <section id="goals">
+        <h2>Mes objectifs</h2>
+        <p>Court terme : Terminer CS50 et construire plus de projets IA.<br>Long terme : Travailler en recherche IA dans une entreprise tech et contribuer à des communautés open-source.</p>
+    </section>
+    <section id="contact">
+        <h2>Contactez-moi</h2>
+        <p>Je serais ravie d'entendre de vos nouvelles !</p>
+        <form action="https://formspree.io/f/your-id" method="POST">
+            <input type="text" name="name" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer le message</button>
+        </form>
+        <p>Email: parmida.mehrabi@example.com<br>LinkedIn: <a href="https://linkedin.com/in/parmidamehrabi">Mon profil</a></p>
+    </section>
+    <footer>&copy; 2025 Parmida Mehrabi | Construit pour le projet final CS50</footer>
+</body>
 </html>
