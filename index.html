@@ -97,6 +97,13 @@
             color: white;
             margin-top: 50px;
         }
+        .dark-mode {
+            background-color: #333;
+            color: #f0f0f0;
+        }
+        .dark-mode section { 
+            background: #444; color: #f0f0f0; 
+        }
         @media (max-width: 768px) {
             nav a {
                 display: block;
@@ -104,8 +111,8 @@
             }
         }
     </style>
-</head>
-<body>
+ </head>
+ <body>
 
     <header>
         <img src="images/profile.jpg" alt="Parmida Mehrabi">
@@ -211,6 +218,12 @@
         }
     }
    </script>
+    <button onclick="toggleTheme()" style="position:fixed; top:10px; left:10px; padding:10px; background:#007bff; color:white; border:none; cursor:pointer;">Toggle Theme</button>
+   <script>
+       function toggleTheme() {
+           document.body.classList.toggle('dark-mode');
+      }
+    </script>
     <footer>
         &copy; 2025 Parmida Mehrabi | Made with ❤️ for CS50 Final Project
     </footer>
