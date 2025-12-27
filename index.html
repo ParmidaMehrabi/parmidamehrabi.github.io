@@ -1,234 +1,181 @@
+ Parmida Mehrabi, [27/12/2025 23:44]
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Parmida Mehrabi - Programmer passionate about Artificial Intelligence">
-  <title>Parmida Mehrabi - Portfolio</title>
-<style>
-    html {
-        scroll-behavior: smooth;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #f0f0f0;
-    }
-
-    header {
-        background-color: #007bff;
-        color: white;
-        text-align: center;
-        padding: 40px 20px;
-        position: relative;
-    }
-
-    header img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        margin-bottom: 10px;
-    }
-
-    .language-switch {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: rgba(0,0,0,0.5);
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    .language-switch a {
-        color: white;
-        margin: 0 10px;
-        text-decoration: none;
-    }
-
-    nav {
-        background-color: rgba(0, 0, 0, 0.7);
-        padding: 10px;
-        text-align: center;
-    }
-
-    nav a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    nav a:hover {
-        color: #00ff00;
-    }
-
-    section {
-        max-width: 800px;
-        margin: 20px auto;
-        padding: 20px;
-        background: rgba(255, 255, 255, 0.9);
-        color: #333;
-        border-radius: 8px;
-        box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
-    }
-
-    #skills ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    #skills li {
-        background: #e9ecef;
-        margin: 5px 0;
-        padding: 10px;
-        border-radius: 5px;
-    }
-
-    #projects ul {
-        list-style-type: none;
-        padding: 0;
-    }
-
-    #projects li {
-        margin-bottom: 20px;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    input, textarea, button {
-        margin: 10px 0;
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    button {
-        background-color: #007bff;
-        color: white;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #0056b3;
-    }
-
-    footer {
-        text-align: center;
-        padding: 10px;
-        background-color: #333;
-        color: white;
-        margin-top: 20px;
-    }
-
-    @media (max-width: 600px) {
-        section {
-            margin: 10px;
-            padding: 15px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio of Parmida Mehrabi, AI enthusiast and programmer.">
+    <title>Parmida Mehrabi - Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth; /* این خط باعث اسکرول نرم و قشنگ می‌شه */
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
         header {
-            padding: 20px 10px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
         }
-    }
-</style>
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+        nav {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .project {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #007bff;
+            margin: 15px 0;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button {
+            background: #007bff;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        form button:hover {
+            background: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 50px;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <div class="language-switch">
-      <a href="/en/">English</a> |
-      <a href="/fr/">Français</a> |
-      <a href="/pe/">Persian</a>
-    </div>
-    <img src="images/profile.jpg" alt="Profile photo of Parmida Mehrabi">
-    <h1>Parmida Mehrabi</h1>
-    <p>Programmer passionate about Artificial Intelligence | Skilled in C++, Python, HTML/CSS, and Java</p>
-  </header>
+    <header>
+        <img src="images/profile.jpg" alt="Parmida Mehrabi">
+        <h1>Parmida Mehrabi</h1>
+        <p>Programmer passionate about Artificial Intelligence | Skilled in C++, Python, HTML/CSS, and Java</p>
+    </header>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#goals">My Goals</a>
-    <a href="#contact">Contact Me</a>
-  </nav>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#goals">Goals</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-  <div class="accordion">
-    <!-- About Me -->
-    <button class="section-button">About Me</button>
-    <div class="section-content">
-      <p>Hello! I'm Parmida Mehrabi, a computer science student with a strong passion for artificial intelligence. I have experience in developing AI projects and web applications. Currently, I'm completing the CS50 course from Harvard University to further enhance my skills.</p>
-    </div>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Parmida Mehrabi, a computer science student with a strong passion for artificial intelligence. I have experience in developing AI projects and web applications. Currently, I'm completing the CS50 course from Harvard University to further enhance my skills.</p>
+    </section>
 
-    <!-- Skills -->
-    <button class="section-button">Skills</button>
-    <div class="section-content">
-      <ul>
-        <li><strong>C++</strong> - Advanced programming for algorithms and systems</li>
-        <li><strong>Python</strong> - Used for AI, machine learning, and scripting</li>
-        <li><strong>HTML/CSS</strong> - Building responsive websites</li>
-        <li><strong>Java</strong> - Object-oriented programming and app development</li>
-      </ul>
-    </div>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>C++</strong> - Advanced programming for algorithms and systems</li>
+            <li><strong>Python</strong> - Used for AI, machine learning, and scripting</li>
+            <li><strong>HTML/CSS</strong> - Building responsive and beautiful websites</li>
+            <li><strong>Java</strong> - Object-oriented programming and app development</li>
+        </ul>
+    </section>
 
-    <!-- Projects -->
-    <button class="section-button">Projects</button>
-    <div class="section-content">
-      <ul>
-        <li>
-          <h3>AI Chatbot</h3>
-          <p>A simple chatbot built with Python and the NLTK library for natural language processing.</p>
-          <a href="https://github.com/parmidamehrabi/ai-chatbot" target="_blank">View on GitHub</a>
-        </li>
-        <li>
-          <h3>Personal Website</h3>
-          <p>This portfolio site, built with HTML, CSS, and JavaScript on GitHub Pages.</p>
-          <a href="https://github.com/ParmidaMehrabi/parmidamehrabi.github.io" target="_blank">View Source</a>
-        </li>
-      </ul>
-    </div>
+    <section id="projects">
 
-    <!-- Goals -->
-    <button class="section-button">My Goals</button>
-    <div class="section-content">
-      <p>Short-term: Complete CS50 and build more AI projects.<br>
-      Long-term: Work in AI research at a tech company and contribute to open-source communities.</p>
-    </div>
+Parmida Mehrabi, [27/12/2025 23:44]
+<h2>Projects</h2>
+        <div class="project">
+            <h3>AI Chatbot</h3>
+            <p>A simple chatbot built with Python and the NLTK library for natural language processing.</p>
+            <a href="https://github.com/parmidamehrabi/your-chatbot-repo" style="color:#007bff;">View on GitHub →</a>
+        </div>
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
+            <p>This very website! Built with HTML, CSS, and JavaScript, hosted on GitHub Pages.</p>
+            <a href="https://github.com/parmidamehrabi/parmidamehrabi.github.io" style="color:#007bff;">View Source Code →</a>
+        </div>
+    </section>
 
-    <!-- Contact -->
-    <button class="section-button">Contact Me</button>
-    <div class="section-content">
-      <p>Ways to reach me:</p>
-      <form action="https://formspree.io/f/YOUR-FORM-ID-HERE" method="POST">
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p style="margin-top: 20px;">
-        Email: parmida.mehrabi@example.com<br>
-        LinkedIn: <a href="https://linkedin.com/in/parmidamehrabi" target="_blank">My Profile</a>
-      </p>
-    </div>
-  </div>
+    <section id="goals">
+        <h2>My Goals</h2>
+        <p>Short-term: Complete CS50 and build more advanced AI projects.<br>
+        Long-term: Work in AI research at a leading tech company and contribute to open-source AI communities.</p>
+    </section>
 
-  <footer>
-    © 2025 Parmida Mehrabi | Built with HTML, CSS, and JavaScript – CS50 Final Project
-  </footer>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Feel free to reach out:</p>
+        <form action="https://formspree.io/f/your-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p style="margin-top:20px;">
+            Email: parmida.mehrabi@example.com<br>
+            LinkedIn: <a href="https://linkedin.com/in/yourprofile" style="color:#007bff;">My Profile</a>
+        </p>
+    </section>
 
-  <script>
-    const buttons = document.querySelectorAll('.section-button');
-    buttons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const content = btn.nextElementSibling;
-        content.classList.toggle('open');
-      });
-    });
-  </script>
+    <footer>
+        &copy; 2025 Parmida Mehrabi | Made with ❤️ for CS50 Final Project
+    </footer>
 
 </body>
-</html
+</html>
