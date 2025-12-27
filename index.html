@@ -5,149 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfolio of Parmida Mehrabi - Programmer passionate about Artificial Intelligence">
   <title>Parmida Mehrabi - Portfolio</title>
-  <style>
-    :root {
-      --primary: #007bff;
-      --primary-dark: #0056b3;
-      --bg: #f8f9fa;
-      --text: #333;
-      --card-bg: white;
+<style>
+    html {
+        scroll-behavior: smooth;
     }
+
     body {
-      font-family: 'Arial', 'Helvetica', sans-serif;
-      margin: 0;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #f0f0f0;
     }
-    html { scroll-behavior: smooth; }
 
     header {
-      background: linear-gradient(to bottom, var(--primary), var(--primary-dark));
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
+        background-color: #007bff;
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        position: relative;
     }
+
     header img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 5px solid white;
-      margin-bottom: 20px;
-      object-fit: cover;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
     }
+
     .language-switch {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: rgba(0,0,0,0.3);
-      padding: 8px 15px;
-      border-radius: 30px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+        border-radius: 5px;
     }
+
     .language-switch a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-size: 14px;
+        color: white;
+        margin: 0 10px;
+        text-decoration: none;
     }
 
     nav {
-      background: rgba(0,0,0,0.8);
-      padding: 15px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        text-align: center;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    nav a:hover { color: #a0d8ff; }
 
-    .accordion {
-      max-width: 900px;
-      margin: 30px auto;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      overflow: hidden;
+    nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
     }
-    .section-button {
-      width: 100%;
-      padding: 20px;
-      background: var(--primary);
-      color: white;
-      font-size: 20px;
-      text-align: left;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s;
+
+    nav a:hover {
+        color: #00ff00;
     }
-    .section-button:hover { background: var(--primary-dark); }
-    .section-content {
-      max-height: 0;
-      overflow: hidden;
-      background: var(--card-bg);
-      padding: 0 30px;
-      transition: max-height 0.5s ease, padding 0.5s ease;
+
+    section {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.9);
+        color: #333;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
     }
-    .section-content.open {
-      max-height: 1200px;
-      padding: 30px;
+
+    #skills ul {
+        list-style-type: none;
+        padding: 0;
     }
-    .section-content ul {
-      list-style: none;
-      padding-left: 20px;
+
+    #skills li {
+        background: #e9ecef;
+        margin: 5px 0;
+        padding: 10px;
+        border-radius: 5px;
     }
-    .section-content li {
-      margin: 15px 0;
-      padding: 15px;
-      background: #f1f3f5;
-      border-radius: 8px;
+
+    #projects ul {
+        list-style-type: none;
+        padding: 0;
     }
-    .section-content a {
-      color: var(--primary);
-      text-decoration: none;
+
+    #projects li {
+        margin-bottom: 20px;
     }
-    .section-content a:hover { text-decoration: underline; }
 
     form {
-      display: grid;
-      gap: 15px;
+        display: flex;
+        flex-direction: column;
     }
+
     input, textarea, button {
-      padding: 12px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-size: 16px;
+        margin: 10px 0;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
+
     button {
-      background: var(--primary);
-      color: white;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
     }
-    button:hover { background: var(--primary-dark); }
+
+    button:hover {
+        background-color: #0056b3;
+    }
 
     footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: white;
-      margin-top: 50px;
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        margin-top: 20px;
     }
 
-    @media (max-width: 768px) {
-      header { padding: 40px 15px; }
-      .language-switch { position: static; margin-bottom: 20px; }
-      nav a { margin: 0 8px; font-size: 14px; }
-      .section-content { padding: 20px; }
+    @media (max-width: 600px) {
+        section {
+            margin: 10px;
+            padding: 15px;
+        }
+        header {
+            padding: 20px 10px;
+        }
     }
-  </style>
+</style>
 </head>
 <body>
 
