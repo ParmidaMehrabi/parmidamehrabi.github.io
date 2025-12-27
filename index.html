@@ -1,4 +1,4 @@
- Parmida Mehrabi, [27/12/2025 23:44]
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -122,24 +122,41 @@
     </nav>
 
     <section id="about">
-        <h2>About Me</h2>
+<section id="about">
+    <h2>
+        <button onclick="toggleSection('aboutContent')" style="background:none; border:none; color:#007bff; font-size:28px; cursor:pointer; padding:0; font:inherit; text-align:left; width:100%;">
+            About Me ▼
+        </button>
+    </h2>
+    <div id="aboutContent" style="display:none;">
         <p>Hello! I'm Parmida Mehrabi, a computer science student with a strong passion for artificial intelligence. I have experience in developing AI projects and web applications. Currently, I'm completing the CS50 course from Harvard University to further enhance my skills.</p>
-    </section>
+    </div>
+</section>
 
-    <section id="skills">
-        <h2>Skills</h2>
+
+<section id="skills">
+    <h2>
+        <button onclick="toggleSection('skillsContent')" style="background:none; border:none; color:#007bff; font-size:28px; cursor:pointer; padding:0; font:inherit; text-align:left; width:100%;">
+            Skills ▼
+        </button>
+    </h2>
+    <div id="skillsContent" style="display:none;">
         <ul>
             <li><strong>C++</strong> - Advanced programming for algorithms and systems</li>
             <li><strong>Python</strong> - Used for AI, machine learning, and scripting</li>
             <li><strong>HTML/CSS</strong> - Building responsive and beautiful websites</li>
             <li><strong>Java</strong> - Object-oriented programming and app development</li>
         </ul>
-    </section>
+    </div>
+</section>
 
-    <section id="projects">
-
-Parmida Mehrabi, [27/12/2025 23:44]
-<h2>Projects</h2>
+<section id="projects">
+    <h2>
+        <button onclick="toggleSection('projectsContent')" style="background:none; border:none; color:#007bff; font-size:28px; cursor:pointer; padding:0; font:inherit; text-align:left; width:100%;">
+            Projects ▼
+        </button>
+    </h2>
+    <div id="projectsContent" style="display:none;">
         <div class="project">
             <h3>AI Chatbot</h3>
             <p>A simple chatbot built with Python and the NLTK library for natural language processing.</p>
@@ -150,16 +167,28 @@ Parmida Mehrabi, [27/12/2025 23:44]
             <p>This very website! Built with HTML, CSS, and JavaScript, hosted on GitHub Pages.</p>
             <a href="https://github.com/parmidamehrabi/parmidamehrabi.github.io" style="color:#007bff;">View Source Code →</a>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="goals">
-        <h2>My Goals</h2>
+<section id="goals">
+    <h2>
+        <button onclick="toggleSection('goalsContent')" style="background:none; border:none; color:#007bff; font-size:28px; cursor:pointer; padding:0; font:inherit; text-align:left; width:100%;">
+            My Goals ▼
+        </button>
+    </h2>
+    <div id="goalsContent" style="display:none;">
         <p>Short-term: Complete CS50 and build more advanced AI projects.<br>
         Long-term: Work in AI research at a leading tech company and contribute to open-source AI communities.</p>
-    </section>
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
+<section id="contact">
+    <h2>
+        <button onclick="toggleSection('contactContent')" style="background:none; border:none; color:#007bff; font-size:28px; cursor:pointer; padding:0; font:inherit; text-align:left; width:100%;">
+            Contact Me ▼
+        </button>
+    </h2>
+    <div id="contactContent" style="display:none;">
         <p>I'd love to hear from you! Feel free to reach out:</p>
         <form action="https://formspree.io/f/your-id" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -168,10 +197,12 @@ Parmida Mehrabi, [27/12/2025 23:44]
             <button type="submit">Send Message</button>
         </form>
         <p style="margin-top:20px;">
-            Email: parmida.mehrabi@example.com<br>
-            LinkedIn: <a href="https://linkedin.com/in/yourprofile" style="color:#007bff;">My Profile</a>
+            Email: parmidamehrabi69@gmail.com<br>
+            Instagram: <a href="https://www.instagram.com/pm.programmer?igsh=MXI5Nm90NTFhZjZwcQ==" style="color:#007bff;">My Profile</a>
         </p>
-    </section>
+    </div>
+</section>
+<script>
 
     <footer>
         &copy; 2025 Parmida Mehrabi | Made with ❤️ for CS50 Final Project
