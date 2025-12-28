@@ -132,11 +132,11 @@
     </nav>
     <section id="about">
         <h2 onclick="toggleSection('aboutcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">درباره من</h2>
-        <p>سلام! من پرمیدا مهرابی هستم، دانشجوی علوم کامپیوتر با علاقه شدید به هوش مصنوعی. تجربه در توسعه پروژه‌های هوش مصنوعی و اپلیکیشن‌های وب دارم. در حال حاضر، دوره CS50 دانشگاه هاروارد رو برای بهبود مهارت‌هام تکمیل می‌کنم.</p>
+        <div id="aboutContent" style"display:none;">سلام! من پرمیدا مهرابی هستم، دانشجوی علوم کامپیوتر با علاقه شدید به هوش مصنوعی. تجربه در توسعه پروژه‌های هوش مصنوعی و اپلیکیشن‌های وب دارم. در حال حاضر، دوره CS50 دانشگاه هاروارد رو برای بهبود مهارت‌هام تکمیل می‌کنم.</div>
     </section>
     <section id="skills">
         <h2 onclick="toggleSection('skillscontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">مهارت‌ها</h2>
-        <ul>
+        <ul id="aboutContent" style"display:none;">
             <li><strong>C++</strong> - برنامه‌نویسی پیشرفته برای الگوریتم‌ها و سیستم‌ها</li>
             <li><strong>Python</strong> - استفاده برای هوش مصنوعی، یادگیری ماشین و اسکریپتینگ</li>
             <li><strong>HTML/CSS</strong> - ساخت وب‌سایت‌های ریسپانسیو</li>
@@ -145,30 +145,34 @@
     </section>
     <section id="projects">
         <h2 onclick="toggleSection('projectcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">پروژه‌ها</h2>
-        <div class="project">
+     <div id="projectContent" style"display:none;">
+         <div class="project">
             <h3>چت‌بات هوش مصنوعی</h3>
             <p>یک چت‌بات ساده ساخته‌شده با Python و کتابخانه NLTK برای پردازش زبان طبیعی.</p>
             <a href="https://github.com/parmidamehrabi/ai-chatbot">مشاهده در GitHub</a>
-        </div>
+          </div>
         <div class="project">
             <h3>وب‌سایت شخصی</h3>
             <p>این پرتفولیو، ساخته‌شده با HTML، CSS و JavaScript روی GitHub Pages.</p>
             <a href="https://github.com/parmidamehrabi/parmidamehrabi.github.io">مشاهده منبع</a>
         </div>
+     </div>
     </section>
     <section id="goals">
         <h2 onclick="toggleSection('goalscontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">اهداف من</h2>
-        <p>کوتاه‌مدت: تکمیل CS50 و ساخت پروژه‌های هوش مصنوعی بیشتر.<br>بلندمدت: کار در تحقیقات هوش مصنوعی در یک شرکت فناوری و کمک به جوامع اوپن‌سورس.</p>
+        <div id="goalsContent" style"display:none;">کوتاه‌مدت: تکمیل CS50 و ساخت پروژه‌های هوش مصنوعی بیشتر.<br>بلندمدت: کار در تحقیقات هوش مصنوعی در یک شرکت فناوری و کمک به جوامع اوپن‌سورس.</div>
     </section>
     <section id="contact">
         <h2 onclick="toggleSection('contactcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">تماس با من</h2>
-        <p>خوشحال می‌شم ازتون بشنوم!</p>
-        <form action="https://formspree.io/f/your-id" method="POST">
+        <div id="contactContent" style"display:none;">
+            <p>خوشحال می‌شم ازتون بشنوم!</p>
+           <form action="https://formspree.io/f/your-id" method="POST">
             <input type="text" name="name" placeholder="نام شما" required>
             <input type="email" name="email" placeholder="ایمیل شما" required>
             <textarea name="message" rows="5" placeholder="پیام شما" required></textarea>
             <button type="submit">ارسال پیام</button>
-        </form>
+        </div>
+     </form>
         <p>ایمیل: parmidamehrabi69@gmail.com<br>اینستاگرام: <a href="https://instagram.com/pm.programmer">پروفایل من</a></p>
     </section>
     <script>
