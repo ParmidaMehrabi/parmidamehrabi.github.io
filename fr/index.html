@@ -186,7 +186,11 @@
     }
    </script>
     <button onclick="toggleTheme()" style="position:fixed; top:10px; left:10px; padding:10px; background:#007bff; color:white; border:none; cursor:pointer;">Toggle Theme</button>
-    
+    <script>
+       function toggleTheme() {
+           document.body.classList.toggle('dark-mode');
+      }
+    </script>
     <footer>&copy; 2025 Parmida Mehrabi | Construit pour le projet final CS50</footer>
 </body>
 </html>
