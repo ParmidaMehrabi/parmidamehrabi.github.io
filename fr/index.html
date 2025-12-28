@@ -6,7 +6,9 @@
     <meta name="description" content="Portfolio personnel de Parmida Mehrabi, programmeuse passionnée par l'intelligence artificielle.">
     <title>Parmida Mehrabi - Portfolio</title>
     <style>
-        html { scroll-behavior: smooth; }
+        html { 
+            scroll-behavior: smooth;
+        }
         body { 
             font-family: Arial, sans-serif;
               margin: 0;
@@ -128,11 +130,11 @@
         <a href="#contact">Contactez-moi</a>
     </nav>
     <section id="about">
-        <h2>À propos de moi</h2>
+        <h2 onclick="toggleSection('aboutcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">À propos de moi</h2>
         <p>Bonjour ! Je m'appelle Parmida Mehrabi, étudiante en informatique avec une forte passion pour l'intelligence artificielle. J'ai de l'expérience dans le développement de projets IA et d'applications web. Actuellement, je termine le cours CS50 de l'Université Harvard pour améliorer mes compétences.</p>
     </section>
     <section id="skills">
-        <h2>Compétences</h2>
+        <h2 onclick="toggleSection('skillscontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">Compétences</h2>
         <ul>
             <li><strong>C++</strong> - Programmation avancée pour algorithmes et systèmes</li>
             <li><strong>Python</strong> - Utilisé pour l'IA, l'apprentissage automatique et le scripting</li>
@@ -141,24 +143,24 @@
         </ul>
     </section>
     <section id="projects">
-        <h2>Projets</h2>
+        <h2 onclick="toggleSection('projectscontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">Projets</h2>
         <div class="project">
             <h3>Chatbot IA</h3>
             <p>Un chatbot simple construit avec Python et la bibliothèque NLTK pour le traitement du langage naturel.</p>
             <a href="https://github.com/parmidamehrabi/ai-chatbot">Voir sur GitHub</a>
         </div>
         <div class="project">
-            <h3>Site web personnel</h3>
+            <h3 onclick="toggleSection('projectcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">Site web personnel</h3>
             <p>Ce portfolio, construit avec HTML, CSS et JavaScript sur GitHub Pages.</p>
             <a href="https://github.com/parmidamehrabi/parmidamehrabi.github.io">Voir la source</a>
         </div>
     </section>
     <section id="goals">
-        <h2>Mes objectifs</h2>
+        <h2 onclick="toggleSection('goalscontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">Mes objectifs</h2>
         <p>Court terme : Terminer CS50 et construire plus de projets IA.<br>Long terme : Travailler en recherche IA dans une entreprise tech et contribuer à des communautés open-source.</p>
     </section>
     <section id="contact">
-        <h2>Contactez-moi</h2>
+        <h2 onclick="toggleSection('contactcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">Contactez-moi</h2>
         <p>Je serais ravie d'entendre de vos nouvelles !</p>
         <form action="https://formspree.io/f/your-id" method="POST">
             <input type="text" name="name" placeholder="Votre nom" required>
