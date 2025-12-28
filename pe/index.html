@@ -131,11 +131,11 @@
         <a href="#contact">تماس با من</a>
     </nav>
     <section id="about">
-        <h2>درباره من</h2>
+        <h2 onclick="toggleSection('aboutcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">درباره من</h2>
         <p>سلام! من پرمیدا مهرابی هستم، دانشجوی علوم کامپیوتر با علاقه شدید به هوش مصنوعی. تجربه در توسعه پروژه‌های هوش مصنوعی و اپلیکیشن‌های وب دارم. در حال حاضر، دوره CS50 دانشگاه هاروارد رو برای بهبود مهارت‌هام تکمیل می‌کنم.</p>
     </section>
     <section id="skills">
-        <h2>مهارت‌ها</h2>
+        <h2 onclick="toggleSection('skillscontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">مهارت‌ها</h2>
         <ul>
             <li><strong>C++</strong> - برنامه‌نویسی پیشرفته برای الگوریتم‌ها و سیستم‌ها</li>
             <li><strong>Python</strong> - استفاده برای هوش مصنوعی، یادگیری ماشین و اسکریپتینگ</li>
@@ -144,7 +144,7 @@
         </ul>
     </section>
     <section id="projects">
-        <h2>پروژه‌ها</h2>
+        <h2 onclick="toggleSection('projectcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">پروژه‌ها</h2>
         <div class="project">
             <h3>چت‌بات هوش مصنوعی</h3>
             <p>یک چت‌بات ساده ساخته‌شده با Python و کتابخانه NLTK برای پردازش زبان طبیعی.</p>
@@ -157,11 +157,11 @@
         </div>
     </section>
     <section id="goals">
-        <h2>اهداف من</h2>
+        <h2 onclick="toggleSection('goalscontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">اهداف من</h2>
         <p>کوتاه‌مدت: تکمیل CS50 و ساخت پروژه‌های هوش مصنوعی بیشتر.<br>بلندمدت: کار در تحقیقات هوش مصنوعی در یک شرکت فناوری و کمک به جوامع اوپن‌سورس.</p>
     </section>
     <section id="contact">
-        <h2>تماس با من</h2>
+        <h2 onclick="toggleSection('contactcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">تماس با من</h2>
         <p>خوشحال می‌شم ازتون بشنوم!</p>
         <form action="https://formspree.io/f/your-id" method="POST">
             <input type="text" name="name" placeholder="نام شما" required>
@@ -169,7 +169,7 @@
             <textarea name="message" rows="5" placeholder="پیام شما" required></textarea>
             <button type="submit">ارسال پیام</button>
         </form>
-        <p>ایمیل: parmida.mehrabi@example.com<br>اینستاگرام: <a href="https://linkedin.com/in/parmidamehrabi">پروفایل من</a></p>
+        <p>ایمیل: parmida.mehrabi@gmail.com<br>اینستاگرام: <a href="https://instagram.com/in/pm.programmer">پروفایل من</a></p>
     </section>
     <script>
      function toggleSection(sectionId) {
