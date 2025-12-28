@@ -25,8 +25,8 @@
             padding: 50px 20px;
         }
         header img {
-            width: 150px;
-            height: 150px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             border: 4px solid white;
         }
@@ -125,11 +125,11 @@
         <p>برنامه‌نویس علاقه‌مند به هوش مصنوعی | مهارت در C++، Python، HTML/CSS و Java</p>
     </header>
     <nav>
-        <a href="#about"  onclick="toggleSection('aboutcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">درباره من</a> |
-        <a href="#skills"  onclick="toggleSection('skillscontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">مهارت‌ها</a> |
-        <a href="#projects"  onclick="toggleSection('projectscontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;" >پروژه‌ها</a> |
-        <a href="#goals"  onclick="toggleSection('goalscontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">اهداف من</a> |
-        <a href="#contact"  onclick="toggleSection('contactcontent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">تماس با من</a> 
+        <a href="#about"  onclick="toggleSection('aboutContent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">درباره من</a> |
+        <a href="#skills"  onclick="toggleSection('skillsContent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">مهارت‌ها</a> |
+        <a href="#projects"  onclick="toggleSection('projectsContent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;" >پروژه‌ها</a> |
+        <a href="#goals"  onclick="toggleSection('goalsContent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">اهداف من</a> |
+        <a href="#contact"  onclick="toggleSection('contactContent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">تماس با من</a> 
     </nav>
     <section id="about">
         <h2 onclick="toggleSection('aboutContent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">
@@ -143,13 +143,14 @@
         <h2 onclick="toggleSection('skillsContent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">
             مهارت‌ها<span id="skillsArrow">▼</span>
         </h2>
-        <div id="skillsContent"  style="display:none; padding:10px 0;">
-        <ul id="skillsContent" style="display:none;">
+    <div id="skillsContent"  style="display:none; padding:10px 0;">
+        <ul>
             <li><strong>C++</strong> - برنامه‌نویسی پیشرفته برای الگوریتم‌ها و سیستم‌ها</li>
             <li><strong>Python</strong> - استفاده برای هوش مصنوعی، یادگیری ماشین و اسکریپتینگ</li>
             <li><strong>HTML/CSS</strong> - ساخت وب‌سایت‌های ریسپانسیو</li>
             <li><strong>Java</strong> - برنامه‌نویسی شی‌گرا و توسعه اپ</li>
         </ul>
+    </div>
     </section>
     <section id="projects">
         <h2 onclick="toggleSection('projectContent')" style="cursor:pointer; color:#007bff; margin:0; padding:10px 0;">
@@ -181,8 +182,8 @@
             <textarea name="message" rows="5" placeholder="پیام شما" required></textarea>
             <button type="submit">ارسال پیام</button>
        
-     </form>
-        <p>ایمیل: parmidamehrabi69@gmail.com<br>اینستاگرام: <a href="https://instagram.com/pm.programmer">پروفایل من</a></p>
+          </form>
+           <p>ایمیل: parmidamehrabi69@gmail.com<br>اینستاگرام: <a href="https://instagram.com/pm.programmer">پروفایل من</a></p>
         </div>
         
     </section>
